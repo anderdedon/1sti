@@ -14,7 +14,8 @@ trigger:
     sourceImageName: 'apteste'
     repositoryName: 'https://github.com/anderdedon/1sti'
     autoCreateRepository: true
-- task: BeanstalkDeployApplication@1
+
+#- task: BeanstalkDeployApplication@1
   inputs:
     regionName: 'us-west-1'
     applicationName: '1sti'
