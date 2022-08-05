@@ -7,6 +7,13 @@ trigger:
 - main
 
 #pool:
+- task: ECRPushImage@1
+  inputs:
+    regionName: 'us-west-1'
+    imageSource: 'imagename'
+    sourceImageName: 'apteste'
+    repositoryName: 'https://github.com/anderdedon/1sti'
+    autoCreateRepository: true
 - task: BeanstalkDeployApplication@1
   inputs:
     regionName: 'us-west-1'
