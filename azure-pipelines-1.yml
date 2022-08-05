@@ -1,5 +1,5 @@
 # Starter pipeline
-- task: ECRPullImage@1
+- task: ECRPushImage@1
   inputs:
     awsCredentials: 'eks'
     regionName: 'us-west-1'
