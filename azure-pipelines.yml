@@ -11,20 +11,22 @@ trigger:
   inputs:
     regionName: 'us-west-1'
     imageSource: 'imagename'
+    AWS_ACCESS_KEY_ID: 'AKIAT4N62DZH32UNWMML'
+    AWS_SECRET_ACCESS_KEY: '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'
     sourceImageName: 'apteste'
     repositoryName: 'https://github.com/anderdedon/1sti'
     autoCreateRepository: true
 
-#- task: BeanstalkDeployApplication@1
-  #inputs:
-   # regionName: 'us-west-1'
-    #applicationName: '1sti'
-    #environmentName: '1sti-env'
-    #applicationType: 'version'
-    #versionLabel: 'PHP 8.0 running on 64bit Amazon Linux 2/3.3.15'
-    #description: 'deployElastic'
-    #logRequest: true
-    #logResponse: true
+- task: BeanstalkDeployApplication@1
+  inputs:
+    regionName: 'us-west-1'
+    applicationName: '1sti'
+    environmentName: '1sti-env'
+    applicationType: 'version'
+    versionLabel: 'PHP 8.0 running on 64bit Amazon Linux 2/3.3.15'
+    description: 'deployElastic'
+    logRequest: true
+    logResponse: true
 #  vmImage: ubuntu-latest
 
 steps:
