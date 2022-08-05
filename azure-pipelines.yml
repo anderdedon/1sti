@@ -16,15 +16,15 @@ trigger:
     autoCreateRepository: true
 
 #- task: BeanstalkDeployApplication@1
-  inputs:
-    regionName: 'us-west-1'
-    applicationName: '1sti'
-    environmentName: '1sti-env'
-    applicationType: 'version'
-    versionLabel: 'PHP 8.0 running on 64bit Amazon Linux 2/3.3.15'
-    description: 'deployElastic'
-    logRequest: true
-    logResponse: true
+  #inputs:
+   # regionName: 'us-west-1'
+    #applicationName: '1sti'
+    #environmentName: '1sti-env'
+    #applicationType: 'version'
+    #versionLabel: 'PHP 8.0 running on 64bit Amazon Linux 2/3.3.15'
+    #description: 'deployElastic'
+    #logRequest: true
+    #logResponse: true
 #  vmImage: ubuntu-latest
 
 steps:
