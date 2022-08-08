@@ -1,8 +1,0 @@
-# Starter pipeline
-- task: ECRPushImage@1
-  inputs:
-    awsCredentials: 'eks'
-    regionName: 'us-west-1'
-    repository: 'anderdedon.1sti (1)'
-    imageSource: 'imagetag'
-
