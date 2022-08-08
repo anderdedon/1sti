@@ -1,2 +1,3 @@
 #!/bin/bash
+commands:
 systemctl start httpd 
