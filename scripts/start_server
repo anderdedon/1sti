@@ -1,7 +1,5 @@
 #!/bin/bash
 
 systemctl status httpd 
-files:
-  - source: /index.html
-    destination: /var/www/html/
+
 
