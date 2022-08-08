@@ -1,5 +1,4 @@
 #!/bin/bash
-sudo su
 isExistApp = `pgrep httpd`
 if [[ -n  $isExistApp ]]; then
     systemctl httpd stop        
