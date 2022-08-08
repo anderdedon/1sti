@@ -1,3 +1,4 @@
 #!/bin/bash
-commands:
-systemctl status httpd 
+#commands:
+#systemctl status httpd 
+
