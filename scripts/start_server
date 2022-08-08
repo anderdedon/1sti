@@ -1,7 +1,7 @@
 #!/bin/bash
 #commands:
 systemctl status httpd 
-#files:
-#  - source: /index.html
-#    destination: /var/www/html/
+files:
+  - source: /index.html
+    destination: /var/www/html/
 #    file_exists_behavior: OVERWRITE
