@@ -1,7 +1,7 @@
 version: 0.0
 os: linux
 files:
-  - source: /index
+  - source: /var/www/html/index.html
     destination: /var/www/html/
 hooks:
   BeforeInstall:
@@ -9,6 +9,9 @@ hooks:
      # timeout: 300
    - location: scripts/start_server
      timeout: 300
+  AfterInstall:
+    - location: scripts/post_install.sh
+      timeout: 300
   #ApplicationStop:
    # - location: scripts/stop_server
     #  timeout: 300
