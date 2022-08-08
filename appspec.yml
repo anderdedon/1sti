@@ -1,12 +1,17 @@
 version: 0.0
 os: linux
-
-#!/bin/bash
-sudo su
-yum update -y
-yum install -y httpd
-systemctl start httpd
-systemctl enable httpd
-chkconfig httpd on
-cd /var/www/html
-echo "<html><h1>This is server - 01 </h1></html>" > index.html
+files:
+  - source: /index.html
+    destination: /var/www/html/
+hooks:
+  BeforeInstall:
+    - location: scripts/install_dependencies
+      timeout: 300
+      runas: root
+    - location: scripts/start_server
+      timeout: 300
+      runas: root
+  ApplicationStop:
+    - location: scripts/stop_server
+      timeout: 300
+      runas: root
