@@ -1,22 +1,22 @@
 version: 0.0
 os: linux
 files:
-   - source: /
-     destination: /var/www/html
-permissions:
-   - object: /var/www/html
-     pattern: "**"
-     owner: httpd
-     group: httpd
-     mode: 755
-     type:
-       - file
+  - source: Config/config.txt
+    destination: /webapps/Config
+  - source: source
+    destination: /webapps/myApp
 hooks:
-   BeforeInstall:
-    - location: scripts/installhttpd.sh
-      runas: root
-    - location: scripts/starthttpd.sh
-      runas: root
-   AfterInstall:
-    - location: scripts/restarthttpd.sh
-      runas: root
+  BeforeInstall:
+    - location: Scripts/UnzipResourceBundle.sh
+    - location: Scripts/UnzipDataBundle.sh
+  AfterInstall:
+    - location: Scripts/RunResourceTests.sh
+      timeout: 180
+  ApplicationStart:
+    - location: Scripts/RunFunctionalTests.sh
+      timeout: 3600
+  ValidateService:
+    - location: Scripts/MonitorService.sh
+      timeout: 3600
+      runas: codedeployuser
+
