@@ -1,3 +1,6 @@
+version: 0.0
+os: linux
+
 #!/bin/bash
 sudo su
 yum update -y
