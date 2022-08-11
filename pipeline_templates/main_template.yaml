@@ -74,42 +74,42 @@ stages:
       displayName: "Validate Resources"
       variables:
       - name: us-west-1
-        ${{ if eq(parameters.awsEKSRegion, '') }}:
+        ${{ if eq(parameters.awsEKSRegion, 'us-west-1') }}:
           value: ${{ parameters.awsRegion }}
         ${{ else }}:
           value: ${{ parameters.awsEKSRegion }}
       - name: awsECRRegion
-        ${{ if eq(parameters.awsECRRegion, '') }}:
+        ${{ if eq(parameters.awsECRRegion, 'us-west-1') }}:
           value: ${{ parameters.awsRegion }}
         ${{ else }}:
           value: ${{ parameters.awsECRRegion }}
       - name: helmChartVersion
-        ${{ if eq(parameters.helmChartVersion, '') }}:
+        ${{ if eq(parameters.helmChartVersion, '$(Build.BuildNumber)-helm') }}:
           value: $(Build.BuildNumber)-helm
         ${{ else }}:
           value: ${{ parameters.helmChartVersion }}
       - name: imageTag
-        ${{ if eq(parameters.imageTag, '') }}:
+        ${{ if eq(parameters.imageTag, '$(Build.BuildNumber)-image') }}:
           value: $(Build.BuildNumber)-image
         ${{ else }}:
           value: ${{ parameters.imageTag }}
       - name: imageName
-        ${{ if eq(parameters.imageName, '') }}:
+        ${{ if eq(parameters.imageName, '${{ parameters.projectName }}') }}:
           value: ${{ parameters.projectName }}
         ${{ else }}:
           value: ${{ parameters.imageName }}
       - name: K8sNamespace
-        ${{ if eq(parameters.K8sNamespace, '') }}:
+        ${{ if eq(parameters.K8sNamespace, '${{ parameters.projectName }}') }}:
           value: ${{ parameters.projectName }}
         ${{ else }}:
           value: ${{ parameters.K8sNamespace }}
       - name: dockerfilePath
-        ${{ if eq(parameters.dockerfilePath, '') }}:
+        ${{ if eq(parameters.dockerfilePath, './${{ parameters.projectName }}/Dockerfile') }}:
           value: ./${{ parameters.projectName }}/Dockerfile
         ${{ else }}:
           value: ./${{ parameters.dockerfilePath }}
       - name: helmChartDirPath
-        ${{ if eq(parameters.helmChartDirPath, '') }}:
+        ${{ if eq(parameters.helmChartDirPath, './${{ parameters.projectName }}/charts/${{ parameters.projectName }}') }}:
           value: ./${{ parameters.projectName }}/charts/${{ parameters.projectName }}
         ${{ else }}:
           value: ${{ parameters.helmChartDirPath }}
