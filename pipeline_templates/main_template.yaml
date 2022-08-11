@@ -41,7 +41,7 @@ parameters:
   type: string
   default: ''
 
-- name: ${{ parameters.projectName }}
+- name: ${{ parameters.webapp }}
   displayName: K8s Namespace for deployment
   type: string
   default: ''
@@ -56,12 +56,12 @@ parameters:
   type: string
   default: ''
 
-- name: ./${{ parameters.projectName }}/charts/${{ parameters.projectName }}
+- name: ./${{ parameters.webapp }}/charts/${{ parameters.projectName }}
   displayName: Path of the directory containing the chart to be packaged, eg webapp/charts/webapp
   type: string
   default: 'default'
 
-- name: ./${{ parameters.projectName }}/Dockerfile
+- name: ./${{ parameters.webapp }}/Dockerfile
   displayName: Path of the Dockerfile, eg webapp/Dockerfile.
   type: string
   default: ''
