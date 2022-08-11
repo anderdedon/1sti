@@ -26,7 +26,7 @@ parameters:
   type: string
   default: ''
 
-- name: ${{ parameters.projectName }}
+- name: "webapp"
   displayName: Name of the project, must be same as the Helm Chart name.
   type: string
   default: 'default'
