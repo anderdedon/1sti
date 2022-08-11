@@ -74,15 +74,15 @@ stages:
       displayName: "Validate Resources"
       variables:
       - name: us-west-1
-        ${{ if eq(parameters.us-west-1, '') }}:
-          value: ${{ parameters.us-west-1 }}
+        ${{ if eq(parameters.awsEKSRegion, '') }}:
+          value: ${{ parameters.awsRegion }}
         ${{ else }}:
-          value: ${{ parameters.us-west-1 }}
-      - name: us-west-1
-        ${{ if eq(parameters.us-west-1, '') }}:
-          value: ${{ parameters.us-west-1 }}
+          value: ${{ parameters.awsEKSRegion }}
+      - name: awsECRRegion
+        ${{ if eq(parameters.awsECRRegion, '') }}:
+          value: ${{ parameters.awsRegion }}
         ${{ else }}:
-          value: ${{ parameters.us-west-1 }}
+          value: ${{ parameters.awsECRRegion }}
       - name: helmChartVersion
         ${{ if eq(parameters.helmChartVersion, '') }}:
           value: $(Build.BuildNumber)-helm
