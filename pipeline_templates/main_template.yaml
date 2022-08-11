@@ -56,10 +56,10 @@ parameters:
   type: string
   default: ''
 
-- name: ./${{ parameters.projectName }}/charts/${{ parameters.projectName }}
-  displayName: Path of the directory containing the chart to be packaged, eg webapp/charts/webapp
-  type: string
-  default: 'default'
+#- name: ./${{ parameters.projectName }}/charts/${{ parameters.projectName }}
+#  displayName: Path of the directory containing the chart to be packaged, eg webapp/charts/webapp
+#  type: string
+#  default: 'default'
 
 - name: ./${{ parameters.projectName }}/Dockerfile
   displayName: Path of the Dockerfile, eg webapp/Dockerfile.
