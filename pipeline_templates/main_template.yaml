@@ -29,7 +29,7 @@ parameters:
 - name: "webapp"
   displayName: Name of the project, must be same as the Helm Chart name.
   type: string
-  default: 'default'
+  default: ''
 
 - name: $(Build.BuildNumber)-image
   displayName: Image Tag related to container image for application
@@ -39,12 +39,12 @@ parameters:
 - name: ${{ parameters.projectName }}
   displayName: Name of the container image
   type: string
-  default: 'default'
+  default: ''
 
 - name: ${{ parameters.projectName }}
   displayName: K8s Namespace for deployment
   type: string
-  default: 'default'
+  default: ''
 
 - name: "3.8.2"
   displayName: Version of Helm
