@@ -16,10 +16,10 @@ parameters:
   type: string
   default: ''
 
-- name: us-west-1
-  displayName: ECR region
-  type: string
-  default: ''
+#- name: us-west-1
+#  displayName: ECR region
+#  type: string
+#  default: ''
 
 - name: 267225013839
   displayName: Account ID where ECR Registry is located
@@ -36,10 +36,10 @@ parameters:
   type: string
   default: ''
 
-- name: ${{ parameters.projectName }}
-  displayName: Name of the container image
-  type: string
-  default: ''
+#- name: ${{ parameters.projectName }}
+#  displayName: Name of the container image
+#  type: string
+#  default: ''
 
 - name: ${{ parameters.projectName }}
   displayName: K8s Namespace for deployment
