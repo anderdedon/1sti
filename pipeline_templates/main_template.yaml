@@ -36,7 +36,7 @@ parameters:
   type: string
   default: ''
 
-- name: ${{ parameters."webapp" }}
+- name: ${{ parameters.webapp }}
   displayName: Name of the container image
   type: string
   default: ''
