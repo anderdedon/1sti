@@ -73,7 +73,7 @@ stages:
     - job: "validateResources"
       displayName: "Validate Resources"
       variables:
-      - name: us-west-1
+      - name: awsEKSRegion
         ${{ if eq(parameters.awsEKSRegion, 'us-west-1') }}:
           value: ${{ parameters.awsRegion }}
         ${{ else }}:
