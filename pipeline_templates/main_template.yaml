@@ -39,12 +39,12 @@ parameters:
 - name: ${{ parameters.projectName }}
   displayName: Name of the container image
   type: string
-  default: ''
+  default: 'default'
 
 - name: ${{ parameters.projectName }}
   displayName: K8s Namespace for deployment
   type: string
-  default: ''
+  default: 'default'
 
 - name: "3.8.2"
   displayName: Version of Helm
@@ -59,7 +59,7 @@ parameters:
 - name: ./${{ parameters.projectName }}/charts/${{ parameters.projectName }}
   displayName: Path of the directory containing the chart to be packaged, eg webapp/charts/webapp
   type: string
-  default: ''
+  default: 'default'
 
 - name: ./${{ parameters.projectName }}/Dockerfile
   displayName: Path of the Dockerfile, eg webapp/Dockerfile.
