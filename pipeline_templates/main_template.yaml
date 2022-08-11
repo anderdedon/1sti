@@ -16,10 +16,10 @@ parameters:
   type: string
   default: ''
 
-#- name: us-west-1
-#  displayName: ECR region
-#  type: string
-#  default: ''
+- name: us-west-1
+  displayName: ECR region
+  type: string
+  default: ''
 
 - name: 267225013839
   displayName: Account ID where ECR Registry is located
@@ -36,15 +36,15 @@ parameters:
   type: string
   default: ''
 
-#- name: ${{ parameters.projectName }}
-#  displayName: Name of the container image
-#  type: string
-#  default: ''
+- name: ${{ parameters.projectName }}
+  displayName: Name of the container image
+  type: string
+  default: ''
 
-#- name: ${{ parameters.projectName }}
-#  displayName: K8s Namespace for deployment
-#  type: string
-#  default: ''
+- name: ${{ parameters.projectName }}
+  displayName: K8s Namespace for deployment
+  type: string
+  default: ''
 
 - name: "3.8.2"
   displayName: Version of Helm
@@ -56,15 +56,15 @@ parameters:
   type: string
   default: ''
 
-#- name: ./${{ parameters.projectName }}/charts/${{ parameters.projectName }}
-#  displayName: Path of the directory containing the chart to be packaged, eg webapp/charts/webapp
-#  type: string
-#  default: 'default'
+- name: ./${{ parameters.projectName }}/charts/${{ parameters.projectName }}
+  displayName: Path of the directory containing the chart to be packaged, eg webapp/charts/webapp
+  type: string
+  default: 'default'
 
-#- name: ./${{ parameters.projectName }}/Dockerfile
-#  displayName: Path of the Dockerfile, eg webapp/Dockerfile.
-#  type: string
-#  default: ''
+- name: ./${{ parameters.projectName }}/Dockerfile
+  displayName: Path of the Dockerfile, eg webapp/Dockerfile.
+  type: string
+  default: ''
 
 stages:
 - stage: Init
