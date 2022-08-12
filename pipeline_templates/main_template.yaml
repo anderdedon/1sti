@@ -1,18 +1,15 @@
 parameters:
-- name: azuredevops_service_connection
+- name: serviceConnectionName
   displayName: Service Connection Name 
   type: string
-  default: 'azuredevops_service_connection'
 
 - name: awsRegion
   displayName: Default region for AWS
   type: string
-  default: ''
 
 - name: awsEKSClusterName
   displayName: EKS Cluster name
   type: string
-  default: ''
 
 - name: awsEKSRegion
   displayName: EKS Cluster region
@@ -24,32 +21,32 @@ parameters:
   type: string
   default: ''
 
-- name: 267225013839
+- name: awsECRAccountId
   displayName: Account ID where ECR Registry is located
   type: string
   default: ''
 
-- name: "webapp"
+- name: projectName
   displayName: Name of the project, must be same as the Helm Chart name.
   type: string
-  default: ''
+  default: 'default'
 
-- name: $(Build.BuildNumber)-image
+- name: imageTag
   displayName: Image Tag related to container image for application
   type: string
   default: ''
 
-#- name: webapp
- # displayName: Name of the container image
-  #type: string
-  #default: ''
+- name: imageName
+  displayName: Name of the container image
+  type: string
+  default: ''
 
-#- name: projectName
- # displayName: K8s Namespace for deployment
-  #type: string
-  #default: ''
+- name: K8sNamespace
+  displayName: K8s Namespace for deployment
+  type: string
+  default: ''
 
-- name: "3.8.2"
+- name: helmVersion
   displayName: Version of Helm
   type: string
   default: '3.8.2'
@@ -59,16 +56,16 @@ parameters:
   type: string
   default: ''
 
-- name: ./webapp/charts/webapp
+- name: helmChartDirPath
   displayName: Path of the directory containing the chart to be packaged, eg webapp/charts/webapp
-  type: string
-  default: 'default'
-
-- name: ./webapp/Dockerfile
-  displayName: Path of the Dockerfile, eg webapp/Dockerfile.
   type: string
   default: ''
 
+- name: dockerfilePath
+  displayName: Path of the Dockerfile, eg webapp/Dockerfile.
+  type: string
+  default: ''
+  
 stages:
 - stage: Init
   displayName: "Initialize pipeline"   
