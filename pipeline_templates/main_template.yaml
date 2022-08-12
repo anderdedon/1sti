@@ -61,7 +61,7 @@ parameters:
   type: string
   default: 'default'
 
-- name: ./${{ parameters.projectName }}/Dockerfile
+- name: ./webapp/Dockerfile
   displayName: Path of the Dockerfile, eg webapp/Dockerfile.
   type: string
   default: ''
