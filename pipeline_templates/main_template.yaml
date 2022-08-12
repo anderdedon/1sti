@@ -2,14 +2,17 @@ parameters:
 - name: azuredevops_service_connection
   displayName: Service Connection Name 
   type: string
+  default: ''
 
-- name: awsRegion
+- name: us-west-1
   displayName: Default region for AWS
   type: string
+  default: ''
 
 - name: 1STI
   displayName: EKS Cluster name
   type: string
+  default: ''
 
 - name: us-west-1
   displayName: EKS Cluster region
