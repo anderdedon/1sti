@@ -11,7 +11,7 @@ parameters:
   displayName: EKS Cluster name
   type: string
 
-- name: us-west-1
+- name: awsEKSRegion
   displayName: EKS Cluster region
   type: string
   default: ''
