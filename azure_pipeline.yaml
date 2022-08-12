@@ -13,7 +13,7 @@ variables:
   agentPoolName: 'Pipeline-webapp'
 pool:
   name: $(agentPoolName)
-  vmImage: $(Pipeline-webapp)
+  #vmImage: $(Pipeline-webapp)
 #pool: self-hosted # If you are running self-hosted Azure DevOps Agents
 
 stages:
