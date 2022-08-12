@@ -10,8 +10,7 @@ trigger:
 pr: none
 
 pool:
-name: MASUPORTE 
-  #vmImage: 'ubuntu-latest'
+  vmImage: 'MASUPORTE'
 #pool: self-hosted # If you are running self-hosted Azure DevOps Agents
 
 stages:
