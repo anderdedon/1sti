@@ -41,10 +41,10 @@ parameters:
   type: string
   default: ''
 
-- name: ${{ parameters.projectName }}
-  displayName: K8s Namespace for deployment
-  type: string
-  default: ''
+#- name: ${{ parameters.projectName }}
+ # displayName: K8s Namespace for deployment
+ # type: string
+  #default: ''
 
 - name: "3.8.2"
   displayName: Version of Helm
