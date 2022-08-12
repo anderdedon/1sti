@@ -5,15 +5,15 @@ metadata:
 data:
   index.html: |
     <head>
-    <title>My App</title>
+    <title>My App 1STI</title>
     </head>
     <body>
     <div>    
       <div>
         <h1>
-        Deploy Kubernetes resources to Amazon EKS using Azure DevOps</h1>
+        Deploy de Kubernetes no Amazon EKS utilizando o Azure DevOps</h1>
         <h2>
-            The App Version is: {{.Values.appversion}}</h2>
+            The Versão do App: {{.Values.appversion}}</h2>
         <h3>Links</h3>
         <ul>
             <li>
