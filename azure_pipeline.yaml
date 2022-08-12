@@ -22,4 +22,4 @@ stages:
     awsEKSClusterName: 1STI
     awsEKSRegion: us-west-1
     awsECRRegion: us-west-1
-    projectName: webapp
+    #projectName: webapp
