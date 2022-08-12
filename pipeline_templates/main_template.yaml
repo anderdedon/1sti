@@ -39,10 +39,10 @@ parameters:
   type: string
   default: ''
 
-- name: webapp
-  displayName: Name of the container image
-  type: string
-  default: ''
+#- name: webapp
+ # displayName: Name of the container image
+  #type: string
+  #default: ''
 
 #- name: projectName
  # displayName: K8s Namespace for deployment
