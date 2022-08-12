@@ -54,7 +54,7 @@ parameters:
   type: string
   default: '3.8.2'
 
-- name: $(Build.BuildNumber)-helm
+- name: helmChartVersion
   displayName: Version number for the helm chart to be created
   type: string
   default: ''
