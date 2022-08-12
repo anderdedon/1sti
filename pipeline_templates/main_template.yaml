@@ -56,7 +56,7 @@ parameters:
   type: string
   default: ''
 
-- name: ./${{ parameters.projectName }}/charts/${{ parameters.projectName }}
+- name: ./webapp/charts/webapp
   displayName: Path of the directory containing the chart to be packaged, eg webapp/charts/webapp
   type: string
   default: 'default'
