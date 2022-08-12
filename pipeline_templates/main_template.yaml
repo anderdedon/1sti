@@ -3,7 +3,7 @@ parameters:
   displayName: Service Connection Name 
   type: string
 
-- name: us-west-1
+- name: awsRegion
   displayName: Default region for AWS
   type: string
 
