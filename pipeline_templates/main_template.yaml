@@ -21,7 +21,7 @@ parameters:
   type: string
   default: ''
 
-- name: 267225013839
+- name: AccountID of Service Connection
   displayName: Account ID where ECR Registry is located
   type: string
   default: ''
