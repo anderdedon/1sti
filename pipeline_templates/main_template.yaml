@@ -23,7 +23,7 @@ parameters:
 
 - name: 267225013839
   displayName: Account ID where ECR Registry is located
-  type: number
+  type: string
   default: ''
 
 - name: "webapp"
