@@ -2,6 +2,7 @@ parameters:
 - name: azuredevops_service_connection
   displayName: Service Connection Name 
   type: string
+  default: 'azuredevops_service_connection'
 
 - name: awsRegion
   displayName: Default region for AWS
