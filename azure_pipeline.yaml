@@ -9,10 +9,10 @@ trigger:
     
 pr: none
 
-variables: 
-  agentPoolName: 'MASUPORTE'
+#variables: 
+ # agentPoolName: 'MASUPORTE'
 pool:
-  name: agentPoolName
+  name: 'MASUPORTE'
   #vmImage: 'MASUPORTE'
 #pool: self-hosted # If you are running self-hosted Azure DevOps Agents
 
