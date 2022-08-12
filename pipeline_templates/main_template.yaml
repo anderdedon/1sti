@@ -36,10 +36,10 @@ parameters:
   type: string
   default: ''
 
-- name: ${{ parameters.projectName }}
-  displayName: Name of the container image
-  type: string
-  default: ''
+#- name: ${{ parameters.projectName }}
+ # displayName: Name of the container image
+  #type: string
+  #default: ''
 
 #- name: ${{ parameters.projectName }}
  # displayName: K8s Namespace for deployment
