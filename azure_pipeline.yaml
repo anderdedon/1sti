@@ -25,4 +25,5 @@ stages:
     awsEKSClusterName: 1STI
     awsEKSRegion: us-west-1
     awsECRRegion: us-west-1
+    awsECRAccountId: '267225013839'
     #projectName: webapp
