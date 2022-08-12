@@ -23,7 +23,7 @@ parameters:
 
 - name: awsECRAccountId
   displayName: Account ID where ECR Registry is located
-  type: string
+  type: number
   default: ''
 
 - name: "webapp"
