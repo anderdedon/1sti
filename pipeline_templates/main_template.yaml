@@ -4,22 +4,22 @@ parameters:
   type: string
   default: ''
 
-- name: us-west-1
+- name: awsRegion
   displayName: Default region for AWS
   type: string
   default: ''
 
-- name: 1STI
+- name: awsEKSClusterName
   displayName: EKS Cluster name
   type: string
   default: ''
 
-- name: us-west-1
+- name: awsEKSRegion
   displayName: EKS Cluster region
   type: string
   default: ''
 
-- name: us-west-1
+- name: awsECRRegion
   displayName: ECR region
   type: string
   default: ''
