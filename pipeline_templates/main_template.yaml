@@ -2,7 +2,7 @@ parameters:
 - name: serviceConnectionName
   displayName: Service Connection Name 
   type: string
-  default: '267225013839'
+  default: ''
 
 - name: awsRegion
   displayName: Default region for AWS
