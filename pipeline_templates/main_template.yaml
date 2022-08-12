@@ -16,7 +16,7 @@ parameters:
   type: string
   default: ''
 
-- name: us-west-1
+- name: awsECRRegion
   displayName: ECR region
   type: string
   default: ''
