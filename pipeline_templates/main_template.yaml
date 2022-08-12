@@ -3,7 +3,7 @@ parameters:
   displayName: Service Connection Name 
   type: string
 
-- name: awsRegion
+- name: us-west-1
   displayName: Default region for AWS
   type: string
 
@@ -11,19 +11,19 @@ parameters:
   displayName: EKS Cluster name
   type: string
 
-- name: awsEKSRegion
+- name: us-west-1
   displayName: EKS Cluster region
   type: string
   default: ''
 
-- name: awsECRRegion
+- name: us-west-1
   displayName: ECR region
   type: string
   default: ''
 
-- name: awsECRAccountId
+- name: 267225013839
   displayName: Account ID where ECR Registry is located
-  type: number
+  type: string
   default: ''
 
 - name: "webapp"
