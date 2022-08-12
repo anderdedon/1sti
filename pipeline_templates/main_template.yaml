@@ -21,7 +21,7 @@ parameters:
   type: string
   default: ''
 
-- name: AccountID of Service Connection
+- name: awsECRAccountId
   displayName: Account ID where ECR Registry is located
   type: string
   default: ''
