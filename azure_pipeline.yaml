@@ -9,11 +9,12 @@ trigger:
     
 pr: none
 
-variables: 
-  agentPoolName: 'Pipeline-webapp'
+#variables: 
+ # agentPoolName: 'Pipeline-webapp'
 pool:
-  name: 'Pipeline-webapp'
-  vmImage: $(agentPoolName)
+  vmImage: ubuntu-latest
+  #name: 'Pipeline-webapp'
+  #vmImage: $(agentPoolName)
 #pool: self-hosted # If you are running self-hosted Azure DevOps Agents
 
 stages:
