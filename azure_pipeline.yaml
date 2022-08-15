@@ -21,7 +21,7 @@ stages:
 # Refering the pipeline template, input parameter that are not specified will be added with defaults
 - template: ./pipeline_templates/main_template.yaml
   parameters:
-    #serviceConnectionName: azuredevops_service_connection
+    serviceConnectionName: azuredevops_service_connection
     awsRegion: us-west-1
     awsEKSClusterName: 1STI
    # awsEKSRegion: us-west-1
