@@ -24,6 +24,6 @@ stages:
     #serviceConnectionName: azuredevops_service_connection
     awsRegion: us-west-1
     awsEKSClusterName: 1STI
-    awsEKSRegion: us-west-1
-    awsECRRegion: us-west-1
-    #projectName: webapp
+   # awsEKSRegion: us-west-1
+   # awsECRRegion: us-west-1
+    projectName: webapp
