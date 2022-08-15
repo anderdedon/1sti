@@ -21,7 +21,7 @@ stages:
 # Refering the pipeline template, input parameter that are not specified will be added with defaults
 - template: ./pipeline_templates/main_template.yaml
   parameters:
-    serviceConnectionName: conect-no-aws
+    serviceConnectionName: conect-in-aws
     awsRegion: us-west-1
     awsEKSClusterName: 1STI
    # awsEKSRegion: us-west-1
