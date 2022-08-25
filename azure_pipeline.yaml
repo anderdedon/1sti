@@ -23,7 +23,7 @@ stages:
   parameters:
     serviceConnectionName: conect-in-aws
     awsRegion: us-east-1
-    awsEKSClusterName: 1sti
-    awsEKSRegion: us-east-1
-    awsECRRegion: us-east-1
+    #awsEKSClusterName: 1sti
+    #awsEKSRegion: us-east-1
+    #awsECRRegion: us-east-1
     projectName: webapp
